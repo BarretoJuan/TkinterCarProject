@@ -1,15 +1,9 @@
-#Este es el "esqueleto" con el cual pueden hacer un programa en Python usando la librería tkinter
-#La librería tkinter les permite hacer aplicaciones de escritorio y en este ejemplo tienen la construcción
-#de un menu de opciones
-#Ustedes deben ajustarlo para las opciones de su proyecto
 import ctypes
 from datetime import datetime
 from tkinter import *
 from tkinter import ttk
 
-#Ejemplo de una primera acción
 
-#maximo 8 digitos, completar con ceros a la izquierda
 
 #ARRAYS
 #Vehiculos
@@ -479,17 +473,11 @@ def add_sale():
             read_vehicles()
             read_customers()
             read_sales()
-            print("EL VEHICLE CODE ES "+ vehicle_code)
             if vehicle_code in vehiculo_codigo:
                 index=vehiculo_codigo.index(vehicle_code)
-                print("EL INDEX ES: "+str(index))
-                print(vehiculo_estatus)
-                print('AAA'+vehiculo_estatus[index])
-
                 car_model = vehiculo_modelo[index]
                 if vehiculo_estatus[index] == '0':
                    vehiculo_estatus[index]='1'
-                   print("eL VEHICULO ES UN " + car_model)
                    file = open('COMPRADORES.TXT', "a+")
                    file.write("\n"+buyer_id+doc_type+buyer_name+birth_day+birth_month+birth_year+address+state)
                    file.close()
@@ -590,8 +578,6 @@ def sale_by_date():
             read_vehicles()
             read_customers()
             date = birth_day+birth_month+birth_year
-            print("LA FECHA ES: "+date)
-            print(venta_fecha)
 
             if date in venta_fecha:
                 
