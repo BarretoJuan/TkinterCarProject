@@ -1,0 +1,7 @@
+001CHEVROLET           AVEO                2010130456004000001
+002FORD                EXPLORER            2014180540008500000
+003Ford                Mustang             2023000049000039201
+004Ford                Mustang             2023000049000039200
+005Ford                Mustang             2023000049000039201
+006TOYOTA              4RUNNER             2023000000001000991
+007TOYOTA              COROLLA             2000000400000030300
